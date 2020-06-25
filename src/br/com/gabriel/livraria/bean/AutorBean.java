@@ -1,8 +1,11 @@
 package br.com.gabriel.livraria.bean;
 
+import javax.faces.bean.ManagedBean;
+
 import br.com.gabriel.livraria.dao.DAO;
 import br.com.gabriel.livraria.modelo.Autor;
 
+@ManagedBean
 public class AutorBean {
 	private Autor autor = new Autor();
 
