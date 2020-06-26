@@ -5,7 +5,9 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 public class JPAUtil {
-	private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("jsf-livraria");
+
+	private static EntityManagerFactory emf = Persistence
+			.createEntityManagerFactory("livraria");
 
 	public EntityManager getEntityManager() {
 		return emf.createEntityManager();
